@@ -149,10 +149,14 @@ var swiper = new Swiper(".newsSwiper", {
   // Tambahan untuk responsif
   breakpoints: {
     0: {
-      slidesPerView: 3,
+      slidesPerView: 2,
+      spaceBetween: 60,
     },
     576: {
-      slidesPerView: 3,
+      slidesPerView: 2,
+    },
+    700: {
+      slidesPerView: 2,
     },
     768: {
       slidesPerView: 3,
@@ -162,9 +166,6 @@ var swiper = new Swiper(".newsSwiper", {
     },
   },
 });
-
-
-
 
 const music = document.getElementById("bg-music");
 const button = document.getElementById("music-button");

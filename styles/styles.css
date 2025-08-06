@@ -17,6 +17,46 @@ body {
   color: white;
 }
 
+html.no-scroll,
+body.no-scroll {
+  overflow: hidden !important;
+  height: 100%;
+}
+
+#loader-overlay {
+  position: fixed;
+  z-index: 99999;
+  background: #1a1a19;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100dvh !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease;
+}
+
+.loader-logo {
+  width: 250px;
+  height: auto;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -139,7 +179,6 @@ body {
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
   border: none;
   border-radius: 50%;
@@ -150,11 +189,11 @@ body {
   cursor: pointer;
   transition: 0.3s;
   z-index: 9999;
-  animation: none; /* Default no animation */
+  animation: none;
 }
 
 #music-button:hover {
-  background-color: #333c4aba;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 #music-button ion-icon {
@@ -1559,12 +1598,7 @@ ion-icon {
 }
 
 .news-card:hover {
-  transform: translateY(-5px);
-}
-
-.swiper,
-.swiper-wrapper {
-  overflow: visible !important;
+  filter: saturate(0);
 }
 
 .swiper {
@@ -1580,6 +1614,11 @@ ion-icon {
   align-items: center;
 }
 
+.news-swiper-slide {
+  opacity: 0.6;
+  transform: scale(0.9);
+  transition: all 0.5s;
+}
 .newsSwiper .swiper-slide {
   transition-timing-function: linear !important;
 }
@@ -1900,10 +1939,11 @@ button:hover {
 }
 
 .footer-social a ion-icon {
-  font-size: 56px;
+  font-size: 46px;
   color: #cccccc;
   transition: all 0.5s;
   margin: 0 15px;
+  margin-top: 20px;
 }
 
 .footer-social a ion-icon:hover {

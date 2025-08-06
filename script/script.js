@@ -1,3 +1,23 @@
+window.addEventListener("load", function () {
+  // Disable scroll di html & body
+  document.documentElement.classList.add("no-scroll");
+  document.body.classList.add("no-scroll");
+
+  // Hilangkan loader setelah 1 detik
+  setTimeout(() => {
+    const loader = document.getElementById("loader-overlay");
+    loader.style.opacity = "0";
+    loader.style.pointerEvents = "none";
+
+    // Setelah animasi hilang, hapus loader & aktifkan scroll
+    setTimeout(() => {
+      loader.remove();
+      document.documentElement.classList.remove("no-scroll");
+      document.body.classList.remove("no-scroll");
+    }, 500); // delay fade out
+  }, 1000); // delay awal
+});
+
 document.addEventListener("click", function (e) {
   if (!e.target.closest(".dropdown")) {
     document.querySelectorAll(".dropdown-menu").forEach((menu) => {

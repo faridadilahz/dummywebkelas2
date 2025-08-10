@@ -175,8 +175,14 @@ var swiper = new Swiper(".newsSwiper", {
     576: {
       slidesPerView: 2,
     },
-    700: {
+    620: {
       slidesPerView: 2,
+    },
+    700: {
+      slidesPerView: 2.5,
+    },
+    750: {
+      slidesPerView: 3,
     },
     768: {
       slidesPerView: 3,

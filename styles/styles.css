@@ -234,7 +234,7 @@ body.no-scroll {
     width: clamp(250px, 90vw, 450px);
     height: 70px;
     background: #fff;
-    border-radius: 20px;
+    border-radius: 15px;
     justify-content: center;
     align-items: center;
     z-index: 999;
@@ -662,10 +662,10 @@ body.no-scroll {
   box-shadow: 0 0 20px 5px #00ff261a;
   border-bottom: 7px solid #169976;
   margin: 15px;
-  padding: 10px;
+  padding: 5px;
   width: clamp(180px, 14%, 230px);
   height: 50%;
-  border-radius: 5px;
+  border-radius: 10px;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -691,7 +691,7 @@ body.no-scroll {
   display: block;
   object-fit: cover;
   margin-bottom: 10px;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .card-1 span {
@@ -727,10 +727,10 @@ hr {
   box-shadow: 0 0 20px 5px #00ff261a;
   border-bottom: 7px solid #169976;
   margin: 15px;
-  padding: 10px;
+  padding: 5px;
   width: clamp(180px, 14%, 230px);
   height: 50%;
-  border-radius: 5px;
+  border-radius: 10px;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -765,7 +765,7 @@ hr {
   display: block;
   object-fit: cover;
   margin-bottom: 10px;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .card span {
@@ -1135,7 +1135,7 @@ ion-icon {
 .card-picket {
   background: #ffffff;
   border-bottom: 7px solid #4635b1;
-  border-radius: 5px;
+  border-radius: 10px;
   width: clamp(200px, 30vw, 200px);
   height: auto;
   transition: 0.5s;
@@ -1249,7 +1249,7 @@ ion-icon {
 .subject {
   background: #ffffff;
   border-bottom: 7px solid #ff4f0f;
-  border-radius: 5px;
+  border-radius: 10px;
   width: clamp(200px, 30vw, 200px);
   height: auto;
   transition: 0.5s;
@@ -1367,7 +1367,7 @@ ion-icon {
   width: clamp(170px, 20vw, 200px);
   height: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  border-radius: 10px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -1581,19 +1581,18 @@ ion-icon {
 .news-card {
   left: 0;
   background: white;
-  padding: 10px;
   width: 120%;
   max-width: 250px;
   margin: 0 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  border-radius: 10px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: 0.5s;
   border-bottom: 7px solid #074799;
-  height: 450px;
+  height: 400px;
   box-sizing: border-box;
 }
 
@@ -1633,24 +1632,24 @@ ion-icon {
 .news-card img {
   display: block;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 10px 10px 0 0;
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 3;
   height: auto;
 }
 
 .card-body {
   display: flex;
   flex-direction: column;
-  gap: 10px;
   height: 100%;
+  padding: 10px;
 }
 
 .news-card h3 {
   color: #000000;
   font-size: 24px;
   margin-bottom: 0;
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: left;
   font-weight: 200;
   max-height: 120px;
@@ -1664,8 +1663,8 @@ ion-icon {
 .news-card span {
   color: #000000b2;
   font-size: 16px;
-  margin-top: auto;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: auto;
   word-break: break-word;
   text-align: left !important;
 }
@@ -1727,7 +1726,7 @@ ion-icon {
     align-items: center;
     transition: 0.5s;
     border-bottom: 7px solid #074799;
-    height: 450px;
+    height: 400px;
     box-sizing: border-box;
   }
 
